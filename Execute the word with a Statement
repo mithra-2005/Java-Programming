@@ -7,9 +7,8 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        string str = sc.next(); 
-        System.out.println("May I know how to learn "+str+"!!!...");
-
+        Scanner s=new Scanner(System.in);
+        String str=s.next();
+        System.out.println("May I know how to learn "+str+"!!!...");   
     }
 }
