@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int b=s.nextInt();
+        int h=s.nextInt();
+        int a=s.nextInt();
+        int d=s.nextInt();
+        int c=s.nextInt();
+        double area=0.5*b*h;
+        float peri=(a+d+c);
+        System.out.printf("Area of Triangle is %.2f\n",area);
+        System.out.printf("Perimeter of Triangle is %.2f\n",peri);
+    }
+}
