@@ -13,7 +13,7 @@ public class Solution {
             int firstnum = num / 100;
             int middlenum = (num / 10) % 10; 
             int lastnum = num % 10;
-            if (firstnum == lastDigit) {
+            if (firstnum == lastnum) {
                 System.out.println("palindrome");
             } else {
                 System.out.println("not palindrome");
