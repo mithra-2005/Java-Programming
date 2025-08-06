@@ -4,12 +4,12 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class name {
+public class Solution {
 
     public static void main(String[] args) {
-       Scanner sc = new Scanner(system.in);
-        String str = sc.nextline();
+       Scanner sc = new Scanner(System.in);
+        String str = sc.next();
         System.out.println("Hello");
-        System.out.println(name);
-        }
+        System.out.println(str);
+    }
 }
