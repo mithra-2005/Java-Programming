@@ -12,16 +12,16 @@ public class Solution {
         int choice = sc.nextInt();
         switch (choice) {
             case 1: 
-                int depositAmount = sc.nextInt();
-                balance += depositAmount;
+                int deposit = sc.nextInt();
+                balance += deposit;
                 System.out.println(balance);
                 break;
             case 2: 
-                int withdrawAmount = sc.nextInt();
-                if (withdrawAmount > balance) {
+                int withdrawamt = sc.nextInt();
+                if (withdrawamt > balance) {
                     System.out.println("Insufficient Balance");
                 } else {
-                    balance -= withdrawAmount;
+                    balance -= withdrawamt;
                     System.out.println(balance);
                 }
                 break;
