@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = { 2 , 4 , 6 , 16 , 25 , 56 , 99};
+        int k = 25;
+        int start = 0 , end = arr.length - 1;
+        int mid;
+        while (start <= end) {
+            mid = (start + end) / 2;
+            if (arr[mid] == k)
+            {
+                System.out.println(mid);
+                return;
+            } else if ( arr[mid] < k)
+            start = mid + 1;
+            else if ( arr[mid] > k)
+            end = mid - 1;
+            }
+            System.out.println(-1);
+    }
+}
