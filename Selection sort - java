@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = { 34 , 3 , 4 , 56 , 17 , 14 , 21};
+        int i , j , temp , min;
+        int len = arr.length;
+        for(i = 0 ; i < len ; i++)
+        {
+            min = i;
+            for ( j = i + 1 ; j < len ; j++)
+            {
+                if(arr[j] < arr[min])
+                {
+                    min = j;
+                }
+            }
+            temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+        for(int Y : arr)
+        System.out.print(Y + " ");
+        }
+}
