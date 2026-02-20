@@ -1,0 +1,17 @@
+public class Main
+{
+    static void stmt1()
+    {
+        System.out.println("Bestestestest Brother");
+    }
+    static void stmt2()
+    {
+        System.out.println("Bestestestestestest Friend");
+    }
+	public static void main(String[] args) {
+	    Main s = new Main();
+	    stmt1();
+	    stmt2();
+		
+	}
+}
