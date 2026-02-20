@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    dindigul obj1 = new dindigul();
+	    obj1.display();
+	    coimbatore obj2 = new coimbatore();
+	    obj2.display();
+	
+	}
+}
+class dindigul{
+    void display()
+    {
+        System.out.println("CALM DISTRICT");
+    }
+}
+class coimbatore{
+    void display()
+    {
+        System.out.println("NOISY DISTRICT");
+    }
+}
