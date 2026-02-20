@@ -1,0 +1,66 @@
+class Linkedlist {
+    Node head;
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    static Linkedlist insert(Linkedlist list, int data) {
+        Node newnode = new Node(data);
+
+        if (list.head == null) {
+            list.head = newnode;
+        } else {
+            Node temp = list.head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newnode;
+        }
+        return list;
+    }
+
+    static void deleteEnd(Linkedlist list) {
+        if (list.head == null) {
+            return;
+        }
+        if (list.head.next == null) {
+            list.head = null;
+            return;
+        }
+        Node temp = list.head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = null;
+    }
+    static void display(Linkedlist list) {
+        Node temp = list.head;
+        while (temp != null) {
+            System.out.print(temp.data + " --> ");
+            temp = temp.next;
+        }
+        System.out.print("NULL");
+    }
+
+    public static void main(String[] args) {
+        Linkedlist list = new Linkedlist();
+
+        list = insert(list, 35);
+        list = insert(list, 40);
+        list = insert(list, 45);
+        list = insert(list, 50);
+        list = insert(list, 55);
+
+        deleteEnd(list);   
+        display(list);     
+    }
+}
+
